@@ -1,0 +1,73 @@
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  width: 25vw;
+  height: 6vh;
+  background: #fff;
+  box-shadow: 0 0.4vmax 0.4vmax rgba(0, 0, 0, 0.25);
+}
+
+.chat-input-container__input {
+  width: 80%;
+  height: 6vh;
+  border: none;
+  outline: none;
+  font-size: 1.2vmax;
+  padding-left: 1vmax;
+}
+
+.chat-input-container__input::placeholder {
+  font-size: 1.2vmax;
+}
+
+.chat-input-container__button {
+  width: 20%;
+  height: 6vh;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  color: black;
+  font-size: 1.2vmax;
+  cursor: pointer;
+  box-shadow: 0 0.6vmax 0.6vmax rgba(0, 0, 0, 0.25);
+  transition: background 1s;
+  position: relative;
+  background: coral;
+}
+
+.button__text {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+.chat-input-container__button:hover .button__text {
+  color: white;
+}
+
+.circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 2vh;
+  border-radius: 50%;
+  background: rgb(9, 167, 145);
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 50%;
+  left: 50%;
+}
+
+.chat-input-container__button:hover .circle {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+  top: -50%;
+  left: -50%;
+}
+
+.chat-input-container__button:active {
+  background: #252525;
+  background-size: 100%;
+  transition: ease-in background 0s;
+  box-shadow: 0 0.2vmax 0.2vmax rgba(0, 0, 0, 0.25);
+}

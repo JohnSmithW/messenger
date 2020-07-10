@@ -1,0 +1,7 @@
+[
+  { "userId": 0, "id": 0, "text": "hey", "time": "12:00" },
+  { "userId": 2, "id": 0, "text": "asd", "time": "12:55" },
+  { "userId": 0, "id": 1, "text": "asd", "time": "12:55" },
+  { "userId": 0, "id": 2, "text": "ada", "time": "12:55" },
+  { "userId": 0, "id": 3, "text": "sdsa", "time": "12:55" }
+]

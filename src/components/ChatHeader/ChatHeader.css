@@ -1,0 +1,110 @@
+.chat-header {
+  width: 25vw;
+  height: 6vh;
+  background: #fff;
+  box-shadow: 0 0.4vmax 0.4vmax rgba(0, 0, 0, 0.25);
+}
+
+.chat-interlocutor {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.chat-interlocutor-image {
+  background-image: url('./images/me.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 2.5vmax;
+  height: 2.5vmax;
+  margin: 0.5vmax;
+  border-radius: 0.8vmax;
+}
+
+.chat-interlocutor-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-interlocutor-name__name {
+  font-size: 1.2vmax;
+}
+
+.chat-interlocutor-name__group {
+  font-size: 1vmax;
+  color: #7c7c7c;
+}
+
+.options {
+  position: absolute;
+  right: 0.8vw;
+  background-image: url('./images/dots.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.2vw;
+  height: 4vh;
+  border-radius: 0.8vmax;
+  cursor: pointer;
+}
+
+.options-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  width: 10vw;
+  height: 6vh;
+  background: white;
+  box-shadow: 0 0.6vmax 0.6vmax rgba(0, 0, 0, 0.25);
+  border-radius: 0.5vmax;
+  transition: 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+  z-index: 1;
+}
+
+.options-popup__item {
+  font-size: 0.9vmax;
+  margin-left: 0.5vmax;
+  cursor: pointer;
+}
+
+.options-popup_close {
+  opacity: 0;
+  transform: translateY(4vh);
+}
+
+.options-popup__close {
+  display: flex;
+  justify-content: center;
+  top: 0.2vh;
+  right: 0.2vw;
+  position: absolute;
+  content: '';
+  width: 1vw;
+  height: 2vh;
+  cursor: pointer;
+}
+
+.options-popup__close::before {
+  transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  width: 0.1vw;
+  height: 2vh;
+  background: black;
+}
+
+.options-popup__close::after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  width: 0.1vw;
+  height: 2vh;
+  background: black;
+}
